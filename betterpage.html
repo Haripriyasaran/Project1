@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #000;
+		    }
+            .glow {
+                background-color: #000;
+                margin: 2%;
+                position: relative;
+                display: inline-block;
+                font-size: 1.5em;
+                letter-spacing: .1em;
+                color: #0ef;
+                text-decoration: none;
+                text-transform: uppercase;
+                border: 2px solid #0ef;
+                padding: 10px 30px;
+                z-index: 1;
+                overflow: hidden;
+                transition: color 1s, box-shadow 1s;
+            }
+            .glow:hover {
+                transition-delay: 0s, 1s;
+                color: #fff;
+            }
+            .glow::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -50px;
+                width: 0;
+                height: 100%;
+                background: #0ef;
+                transform: skewX(35deg);
+                z-index: -1;
+                transition: 1s;
+            }
+            .glow:hover:before {
+                width: 100%;
+            }
+        </style>
+        <button class="glow">Hello</button>
+        <script>
+
+        </script>
+    </body>
+</html>
