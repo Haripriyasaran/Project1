@@ -12,7 +12,7 @@ int main()
   
     // Calculate the addition of A and B 
     // using '+' operator 
-    sum = A + B; 
+    sum = A - B; 
   
     // Print the sum 
     printf("Sum of A and B is: %d", sum); 
