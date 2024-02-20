@@ -1,2 +1,2 @@
 # Python program to print
-print ('Sample program')
+print ('Sample')
